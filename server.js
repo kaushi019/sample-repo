@@ -10,6 +10,10 @@ app.get('/',function(req,res){
     res.sendFile(__dirname+'/frontend/html/index.html');
 });
 
+app.get('/resume',function(req,res){
+    res.sendFile(__dirname+'/frontend/html/index2.html');
+});
+
 app.listen(PORT, function(){
     console.log("http://localhost:"+PORT);
 });
