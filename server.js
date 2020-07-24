@@ -5,6 +5,7 @@ var PORT = process.env.PORT || 3500;
 
 app.get('/',function(req,res){
     res.send('This is the beginning....Lets start the course...');
+    res.sendFile(__dirname+'/frontend/html/index.html');
 });
 
 app.listen(PORT, function(){
