@@ -42,7 +42,7 @@ function drawClock() {
     var ang;
     var num;
     var str;
-    ctx.font = radius*0.15+" Comic Sans MS"+"bold";
+    ctx.font = "25px Comic Sans MS";
     ctx.textBaseline = "middle";
     ctx.textAlign = "center";
 
