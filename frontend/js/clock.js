@@ -42,7 +42,7 @@ function drawClock() {
     var ang;
     var num;
     var str;
-    ctx.font = "(radius*0.15)px Comic Sans MS";
+    ctx.font = radius*0.15+" Comic Sans MS"+"bold";
     ctx.textBaseline = "middle";
     ctx.textAlign = "center";
 
@@ -52,7 +52,7 @@ function drawClock() {
         ctx.translate(0, -radius * 0.85);
         ctx.rotate(-ang);
         if(num%3==0){
-            str=num.toString().bold().fontsize(5);
+            str=num.toString();
             ctx.fillText(str, 0, 0);
         }
         else{
@@ -78,6 +78,7 @@ function drawClock() {
     drawHand(ctx, minute, radius*0.8, radius*0.06);
 
     second = (second*Math.PI/30);
+    ctx.strokeStyle='darkblue';
     drawHand(ctx, second, radius*0.85, radius*0.02);
  }
 
