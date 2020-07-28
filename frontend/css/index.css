@@ -25,7 +25,8 @@
     padding: 28px;
 }
 .canv{
-    margin-left: 500px;
-    margin-top: 50px;
-    margin-right: 450px;
+    padding-top:3%;
+    padding-right: 34%;
+    padding-bottom: 7%;
+    padding-left: 36%;
 }
