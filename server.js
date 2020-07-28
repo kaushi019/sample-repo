@@ -14,6 +14,10 @@ app.get('/resume',function(req,res){
     res.sendFile(__dirname+'/frontend/html/index2.html');
 });
 
+app.get('/clock-time',function(req,res){
+    res.sendFile(__dirname+'/frontend/html/clock.html');
+});
+
 app.listen(PORT, function(){
     console.log("http://localhost:"+PORT);
 });
