@@ -18,6 +18,10 @@ app.get('/clock-time',function(req,res){
     res.sendFile(__dirname+'/frontend/html/clock.html');
 });
 
+app.get('/housie',function(req,res){
+    res.sendFile(__dirname+'/frontend/html/housie.html');
+});
+
 app.listen(PORT, function(){
     console.log("http://localhost:"+PORT);
 });

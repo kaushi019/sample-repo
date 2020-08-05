@@ -1,0 +1,13 @@
+.numgen{
+    background-color: rgb(230, 218, 218);
+    border: 1px solid black;
+    height: 145px;
+    width: 200px;
+    margin-left: 560px;
+    margin-right: 460px;
+    text-align: center;
+}
+#numbtn{
+    margin-left: 585px;
+    margin-right: 445px;
+}
