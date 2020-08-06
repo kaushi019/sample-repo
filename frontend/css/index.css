@@ -1,3 +1,6 @@
+#welcome{
+    color: #0e165e;
+}
 .image-edit{
     background-color: #cccccc;
     background-position: center;
@@ -16,13 +19,15 @@
       right: 30%;
 }
 .box{
-    width: 66%;
-    height: 94%;
-    top: 7px;
-    left: 15%;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 65px;
     position: relative;
     background: white;
     padding: 28px;
+}
+table, tr, th, td {
+    border : 1px solid black;
 }
 .canv{
     padding-top:3%;

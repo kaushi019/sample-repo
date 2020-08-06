@@ -1,11 +1,12 @@
 .numgen{
-    background-color: rgb(255, 251, 188);
+    background-color:whitesmoke;
     border: 1px solid black;
     height: 130px;
     width: 190px;
     margin-left: 585px;
     margin-right: 460px;
     text-align: center;
+    border-radius: 8px;
 }
 .heading{
     background-color: black;
@@ -13,12 +14,21 @@
     width: fit-content;
 }
 #numbtn{
-    margin-left: 608px;
-    margin-right: 445px;
-    margin-top: 10px;
+    margin-left: 500px;
+    margin-right: 80px;
+    margin-top: 12px;
+    text-align: center;
+    border-radius: 15px;
+    background: linear-gradient(to left,#2d88ddd5,#71d3fad5);
+}
+#clearbtn{
+    margin-top: 12px;
+    text-align: center;
+    border-radius: 15px;
+    background: linear-gradient(to right,#2d88ddd5,#71d3fad5);
 }
 table, tr, th, td {
-    border : 1px solid black;
+    border : 1.5px solid black;
 }
 #tboard{
     margin-top: 15px;
