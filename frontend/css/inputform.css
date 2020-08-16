@@ -1,0 +1,49 @@
+.form-div{
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 385px;
+    position: relative;
+    background: white;
+    padding: 30px;
+    align-items: center;
+}
+.lab{
+    margin-left: 1px;
+}
+.form-class{
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#nameip{
+    margin-left: 105px;
+    border: 1px solid rgb(3, 3, 44);
+    border-radius: 4px;
+    background-color: rgb(235, 249, 255);
+}
+#branchip{
+    margin-left: 99px;
+    border: 1px solid rgb(3, 3, 44);
+    border-radius: 4px;
+    background-color: rgb(235, 249, 255);
+}
+#ageip{
+    margin-left: 120px;
+    border: 1px solid rgb(3, 3, 44);
+    border-radius: 4px;
+    background-color: rgb(235, 249, 255);
+}
+#mobileip{
+    margin-left: 32px;
+    border: 1px solid rgb(3, 3, 44);
+    border-radius: 4px;
+    background-color: rgb(235, 249, 255);
+}
+#submit-btn{
+    border: 1px solid blue;
+    border-radius: 8px;
+    background-color: rgb(235, 249, 255);
+    margin-left: 10px;
+    font-weight: bold;
+}
