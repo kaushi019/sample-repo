@@ -10,40 +10,70 @@
 .lab{
     margin-left: 1px;
 }
+#heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
 .form-class{
     align-items: center;
     text-align: center;
     border-radius: 10px;
 }
 
-#nameip{
+#name{
     margin-left: 105px;
     border: 1px solid rgb(3, 3, 44);
     border-radius: 4px;
     background-color: rgb(235, 249, 255);
 }
-#branchip{
+#branch{
     margin-left: 99px;
     border: 1px solid rgb(3, 3, 44);
     border-radius: 4px;
     background-color: rgb(235, 249, 255);
 }
-#ageip{
+#age{
     margin-left: 120px;
     border: 1px solid rgb(3, 3, 44);
     border-radius: 4px;
     background-color: rgb(235, 249, 255);
 }
-#mobileip{
+#mobile{
     margin-left: 32px;
     border: 1px solid rgb(3, 3, 44);
     border-radius: 4px;
     background-color: rgb(235, 249, 255);
 }
 #submit-btn{
-    border: 1px solid blue;
+    border: 1px solid;
     border-radius: 8px;
-    background-color: rgb(235, 249, 255);
-    margin-left: 10px;
-    font-weight: bold;
+    background-color: rgb(40, 168, 228);
+    color: white;
+    padding: 8px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+}
+#get-users{
+    border: 1px solid;
+    border-radius: 8px;
+    margin-left: 600px;
+    background-color: rgb(40, 168, 228);
+    color: white;
+    padding: 8px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+}
+table, tr, th, td {
+    border : 1.5px solid black;
+    padding-right: 30px;
+    padding-left: 15px;
+    background-color: white;
+    margin-left: 390px;
+    margin-bottom: 25px;
 }

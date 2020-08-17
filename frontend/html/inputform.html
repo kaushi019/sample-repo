@@ -7,29 +7,35 @@
     </head>
     <body style="background-color: rgb(179, 233, 255);">
         <div class="form-div">
+            <h2 id="heading"><u>Input Form</u></h2>
+            <br>
             <form class="form-class" method="post" action="/api/user" >
                 <label class="lab" style="font-weight: bold;" for="name">Name : </label>
-                <input id="nameip" type="text" id="nameip" placeholder=" Enter name" >
+                <input id="name" type="text" name="name" placeholder=" Enter name" >
                 <br><br>
                 <label class="lab" style="font-weight: bold;" for="mobile">Mobile Number : </label>
-                <input id="mobileip" type="number" id="mobileip" placeholder=" Enter mobile number" >
+                <input id="mobile" type="number" name="mobile" placeholder=" Enter mobile number" >
                 <br><br>
                 <label class="lab" style="font-weight: bold;" for="age">Age : </label>
-                <input id="ageip" type="number" id="ageip" placeholder=" Enter age" >
+                <input id="age" type="number" name="age" placeholder=" Enter age" >
                 <br><br>
                 <label class="lab" style="font-weight: bold;" for="branch">Branch : </label>
-                <input id="branchip" type="text" id="branchip" placeholder=" Enter branch name" >
+                <input id="branch" type="text" name="branch" placeholder=" Enter branch name" >
                 <br><br>
-                <input size="30px" id="submit-btn" type="submit" value="Submit" style="font-style: italic;font-family: 'Times New Roman', Times, serif; font-size: 18px;">
+                <input size="30px" id="submit-btn" type="submit" value="Submit" >
             </form>
         </div>
         <br><br>
-        <input size="30px" id="get-users" type="submit" value="Get Users" style="font-style: italic;font-family: 'Times New Roman', Times, serif; font-size: 18px;margin-left: 50px;">
+        <input size="30px" id="get-users" type="submit" value="Get Users" >
         <br><br>
-        <div id="table">
+        <div>
+            <div id="table">
 
+            </div>
+            <br><br>
+            <a style="text-align:left;margin: 20px;margin-bottom: 10px;color: darkblue;"href="/">Back to Home page</a>
+            <br><br>
         </div>
-        <a style="text-align:left;margin: 20px;margin-bottom: 10px;color: darkblue;"href="/">Back to Home page</a>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
