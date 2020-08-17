@@ -1,30 +1,38 @@
 <html>
     <head>
+        <title>Input Form</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
         <link rel="stylesheet" href="/css/inputform.css" />
     </head>
     <body style="background-color: rgb(179, 233, 255);">
         <div class="form-div">
-            <form class="form-class">
+            <form class="form-class" method="post" action="/api/user" >
                 <label class="lab" style="font-weight: bold;" for="name">Name : </label>
-                <input id="nameip" type="text" id="name" placeholder=" Enter name" required>
+                <input id="nameip" type="text" id="nameip" placeholder=" Enter name" >
                 <br><br>
                 <label class="lab" style="font-weight: bold;" for="mobile">Mobile Number : </label>
-                <input id="mobileip" type="number" id="mobile" placeholder=" Enter mobile number" required>
+                <input id="mobileip" type="number" id="mobileip" placeholder=" Enter mobile number" >
                 <br><br>
                 <label class="lab" style="font-weight: bold;" for="age">Age : </label>
-                <input id="ageip" type="number" id="age" placeholder=" Enter age" required>
+                <input id="ageip" type="number" id="ageip" placeholder=" Enter age" >
                 <br><br>
                 <label class="lab" style="font-weight: bold;" for="branch">Branch : </label>
-                <input id="branchip" type="text" id="branch" placeholder=" Enter branch name" required>
+                <input id="branchip" type="text" id="branchip" placeholder=" Enter branch name" >
                 <br><br>
                 <input size="30px" id="submit-btn" type="submit" value="Submit" style="font-style: italic;font-family: 'Times New Roman', Times, serif; font-size: 18px;">
             </form>
+        </div>
+        <br><br>
+        <input size="30px" id="get-users" type="submit" value="Get Users" style="font-style: italic;font-family: 'Times New Roman', Times, serif; font-size: 18px;margin-left: 50px;">
+        <br><br>
+        <div id="table">
+
         </div>
         <a style="text-align:left;margin: 20px;margin-bottom: 10px;color: darkblue;"href="/">Back to Home page</a>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+        <script src="/js/inputform.js"></script>
     </body>
 </html>

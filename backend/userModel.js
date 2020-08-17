@@ -7,13 +7,16 @@ const user= new mongoose.Schema({
         required:true
     },
     mobile:{
-        type:Number
+        type:Number,
+        required:true
     },
     age:{
-        type:Number
+        type:Number,
+        required:true
     },
     branch:{
-        type:String
+        type:String,
+        required:true
     }
 });
 

@@ -1,14 +1,16 @@
 var express = require('express');
 var app=express();
-const connectDB = require('./backend/DB/connection');
+const dbconnect = require('./backend/DB/connection');
+const userapi=require('./backend/DB/user-api');
 
 var PORT = process.env.PORT || 3500;
 
-connectDB();
+dbconnect.connect((msg)=>{
+    console.log(msg);
+});
 //locate directory of the css/js file
 app.use(express.json());
-app.use(express.urlencoded());
-app.use('/api/user',require('./backend/DB/user-api'));
+app.use(express.urlencoded({extended:true}));
 
 app.use(express.static(__dirname+'/frontend'));
 
@@ -30,6 +32,17 @@ app.get('/housie',function(req,res){
 
 app.get('/ipform',function(req,res){
     res.sendFile(__dirname+'/frontend/html/inputform.html');
+});
+
+app.get('/api/user',function(req,res){
+    userapi.getUsers(function(err,array){
+        res.json(array);
+    })
+});
+
+app.post('/api/user',function(req,res){
+    userapi.createUser(req.body);
+    res.redirect('/ipform');
 });
 
 app.listen(PORT, function(){
