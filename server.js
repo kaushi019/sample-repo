@@ -1,5 +1,6 @@
 var express = require('express');
 var app=express();
+const bodyParser= require('body-parser')
 const dbconnect = require('./backend/DB/connection');
 const userapi=require('./backend/DB/user-api');
 

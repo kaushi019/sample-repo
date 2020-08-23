@@ -1,22 +1,17 @@
 #welcome{
-    color: #0e165e;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    color: rgb(27, 110, 187);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-shadow:2px 2px 8px #51a9fc;
 }
-.image-edit{
-    background-color: #cccccc;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-  .heading{
-      text-align: center;
-      position: absolute;
-      color: rgb(47, 255, 47);
-      top: 15%;
-      left: 30%;
-      right: 30%;
+.heading{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    align-items: center;
+    padding-left: 20%;
 }
 .box{
     width: 90%;
@@ -34,4 +29,24 @@ table, tr, th, td {
     padding-right: 34%;
     padding-bottom: 7%;
     padding-left: 36%;
+}
+
+.items-tgs{
+    float: left;
+    margin-left: 18px;
+    margin-right: 18px;
+    align-items: center;
+    text-align: center;
+}
+
+#resume-img{
+    width: 160;
+    height: 145;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(135, 138, 141, 0.932), 0 6px 20px 0 rgba(187, 189, 192, 0.884);
+}
+#id-tags{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    margin-top: 10px;
 }
