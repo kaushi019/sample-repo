@@ -3,6 +3,7 @@ var app=express();
 const bodyParser= require('body-parser')
 const dbconnect = require('./backend/DB/connection');
 const userapi=require('./backend/DB/user-api');
+const userModel = require('./backend/userModel');
 
 var PORT = process.env.PORT || 3500;
 
@@ -38,6 +39,12 @@ app.get('/ipform',function(req,res){
 app.get('/api/user',function(req,res){
     userapi.getUsers(function(err,array){
         res.json(array);
+    })
+});
+
+app.get('/api/user/:id',function(req,res){
+    userModel.findOne(req.params.id,function(err,obj){
+        res.send(obj);
     })
 });
 

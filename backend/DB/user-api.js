@@ -11,5 +11,8 @@ module.exports={
         userModel.find({},function(err,Users){
             cb(err,Users);
         })
-    }
+    },
+    getByName: function(obj,cb){
+        userModel.find(obj,cb);
+    },
 }
